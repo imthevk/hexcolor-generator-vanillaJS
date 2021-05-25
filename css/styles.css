@@ -9,14 +9,73 @@
 /* //typography */
 html{
   /* 62.5% of 16px = 10px */
-  font-size: 62.5%;   
+  /* font-size: 62.5%;    */
 }
 
 body {
   font-family: 'Andika New Basic', sans-serif;
   color: var(--color-accent) ;
   line-height: 1.5;
+  font-size: 20px;
 }
+
+
+/* links */
+
+/* badges */
+.badge{
+  border-radius: 20px;
+  padding: .5rem 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.badge--primary{
+  background: var(--color-primary);
+  color: #fff
+}
+.badge--secondary{
+  background: var(--color-secondary);
+  color: #fff;
+}
+.badge--small{
+  font-size: 2.6rem;
+
+}
+
+/* list */
+.list{
+  list-style: none;
+  padding-left: 2rem;
+
+  color: var(--color-headings);
+}
+.list--inline .list__item{
+  display: inline-block;
+  margin-right: 2rem;
+} 
+.list--tick{
+  list-style-image: url(../images/tick.svg);
+}
+.list__item{
+  padding-left: .5rem;
+}
+
+.icon{
+  width:40px;
+  height:40px; 
+  fill:var(--color-primary)
+}
+
+.icon-container{
+  background-color: #f3f9fa;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media screen and (min-width: 1024px){
   body{
@@ -31,6 +90,10 @@ body {
   h3{
     font-size: 2.4rem;
   }
+  .badge--small{
+      font-size: 1.6rem;
+  }
+  .list__item{
+    padding-left: 0;
+  }
 }
-
-/* links */
