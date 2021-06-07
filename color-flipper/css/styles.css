@@ -1,5 +1,4 @@
-
-:root{
+:root {
   --color-primary: #e93b81;
   --color-secondary: #f5abc9;
   --color-accent: #fea82f;
@@ -7,73 +6,72 @@
   --color-body: #aa2ee6;
 }
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /* //typography */
 
-html{
-  /* 62.5% of 16px = 10px */
-  /* font-size: 62.5%;    */
+html {
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Andika New Basic', sans-serif;
-  color: var(--color-accent) ;
+  font-family: "Andika New Basic", sans-serif;
+  color: #333);
   line-height: 1.5;
   font-size: 20px;
 }
 
-
 /* links */
-a{
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 /* badges */
-.badge{
+.badge {
   border-radius: 20px;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   font-weight: bold;
   white-space: nowrap;
 }
-.badge--primary{
+.badge--primary {
   background: var(--color-primary);
-  color: #fff
+  color: #fff;
 }
-.badge--secondary{
+.badge--secondary {
   background: var(--color-secondary);
   color: #fff;
 }
-.badge--small{
+.badge--small {
   font-size: 2.6rem;
-
 }
 
 /* list */
-.list{
+.list {
   list-style: none;
   padding-left: 2rem;
 
   color: var(--color-headings);
 }
-.list--inline .list__item{
+.list--inline .list__item {
   display: inline-block;
   margin-right: 2rem;
-} 
-.list--tick{
+}
+.list--tick {
   list-style-image: url(../images/tick.svg);
 }
-.list__item{
-  padding-left: .5rem;
+.list__item {
+  padding-left: 0.5rem;
 }
 
-.icon{
-  width:40px;
-  height:40px; 
-  fill:var(--color-primary)
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-primary);
 }
 
-.icon-container{
+.icon-container {
   background-color: #f3f9fa;
   width: 70px;
   height: 70px;
@@ -82,95 +80,123 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
 }
-.btn{
-  margin:1rem 0;
+.btn {
+  margin: 1rem 0;
   /* width: 100%; */
   display: block;
-  font-size: 1rem;;
+  font-size: 1rem;
   padding: 20px 30px;
-  border:0;
+  border: 0;
   border-radius: 40px;
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
 }
-.btn--primary{
+.btn--primary {
   background: var(--color-primary);
   color: #fff;
-
-} 
-.btn--secondary{
+}
+.btn--secondary {
   background: var(--color-secondary);
   color: #fff;
-
-} 
-.btn--primary:hover{
-  background: #a80790; 
 }
-.btn--block{
+.btn--primary:hover {
+  background: #a80790;
+}
+.btn--block {
   width: 100%;
   display: inline-block;
 }
-.btn--outline{
+.btn--outline {
   background: #fff;
   color: var(--color-headings);
   border: 2px solid var(--color-headings);
 }
-.btn--outline:hover{
+.btn--outline:hover {
   color: #fff;
   background: var(--color-headings);
 }
 
 /* Inputs */
-.input{
+.input {
   padding: 1.5rem 3.5rem;
   border: 1px solid #ccc;
   border-radius: 30px;
   outline: 0;
   color: var(--color-headings);
   font-size: 2rem;
-
 }
-::placeholder{
-  color: #cdcbb7
+::placeholder {
+  color: #cdcbb7;
 }
-.input-group{
+.input-group {
   border: 1px solid #ccc;
   border-radius: 30px;
   display: flex;
 }
-.input-group input{
+.input-group input {
   border: 0;
   flex-grow: 1;
-  padding: .6rem 1rem;
-
+  padding: 0.6rem 1rem;
 }
-.input-group .btn{
+.input-group .btn {
   margin: 4px;
 }
-@media screen and (min-width: 1024px){
-  body{
-    font-size: 1.8rem
+/* @media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
   }
-  h1{
+  h1 {
     font-size: 8rem;
   }
-  h2{
+  h2 {
     font-size: 4rem;
   }
-  h3{
+  h3 {
     font-size: 2.4rem;
   }
-  .badge--small{
-      font-size: 1.6rem;
+  .badge--small {
+    font-size: 1.6rem;
   }
-  .list__item{
+  .list__item {
     padding-left: 0;
   }
-  .btn{
-    font-size: .7rem;
+  .btn {
+    font-size: 0.7rem;
   }
-  .input{
+  .input {
     font-size: 1.3rem;
   }
+} */
+
+.nav{
+  display: flex;
+  justify-content:space-evenly;
+  margin: 0 auto;
+  box-shadow: 0px 1px 30px rgba(0,0,0.2);
+  width: 100%;
+  max-height: 10rem;
+}
+.nav .heading{
+color: var(--color-primary);
+}
+.main{
+  display: grid;
+  place-content: center;
+  margin-top: 10rem;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.main h1{
+  text-transform: capitalize;
+  background-color: rgba(0,0,0.2);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.main .btn{
+  margin: 0 auto;
+  border: 1px solid rgba(0,0,0.2);
+  cursor: pointer;
+  /* text-align: center; 
 }
